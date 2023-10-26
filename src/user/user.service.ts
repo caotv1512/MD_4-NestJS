@@ -9,6 +9,8 @@ export class UserService {
     private userRepository: Repository<User>;
 
     async getUser(): Promise<User[]> {
+
+        
         return this.userRepository.find();
     }
 }
