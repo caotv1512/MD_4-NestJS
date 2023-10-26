@@ -9,7 +9,6 @@ export class UserService {
     private userRepository: Repository<User>;
 
     async getUser(): Promise<User[]> {
-        console.log('aaaaaaaaaaaaaa');
         return this.userRepository.find();
     }
 }
